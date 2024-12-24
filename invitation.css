@@ -119,12 +119,17 @@ body {
   padding: 50px;
   background-image: url('ImageAsetNatal/PatenCanva1.Png');
   background-size: cover;
+  /* Menjamin gambar menutupi seluruh elemen */
   background-position: center;
+  /* Memusatkan gambar */
+  background-repeat: no-repeat;
+  /* Mencegah pengulangan gambar */
   border-bottom: 5px solid #ffcd02;
   padding: 100px 20px;
   border-radius: 20px;
   animation: fadeIn 3s ease-out;
 }
+
 
 .home-section:hover {
   border-color: #ffcd02;
