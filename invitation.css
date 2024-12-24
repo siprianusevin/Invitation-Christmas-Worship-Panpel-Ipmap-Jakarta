@@ -331,20 +331,6 @@ section img {
   animation: zoomEffect 0.8s ease-in-out forwards;
 }
 
-@keyframes zoomEffect {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-
-  50% {
-    transform: scale(1.2) rotate(2deg);
-  }
-
-  100% {
-    transform: scale(1.1) rotate(0deg);
-  }
-}
-
 /* Navbar Style */
 nav.menu {
   display: flex;
@@ -1209,4 +1195,26 @@ button {
 button:hover {
   background-color: #c0392b;
   transform: translateY(-3px);
+}
+
+/* Gaya default untuk layar besar (misalnya desktop) */
+body {
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Gaya untuk layar dengan lebar maksimal 1024px (tablet) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* Gaya untuk layar dengan lebar maksimal 768px (smartphone) */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+    padding: 10px;
+  }
 }

@@ -84,3 +84,25 @@ body {
     /* Hilangkan border fokus */
     font-size: 16px;
 }
+
+/* Gaya default untuk layar besar (misalnya desktop) */
+body {
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Gaya untuk layar dengan lebar maksimal 1024px (tablet) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Gaya untuk layar dengan lebar maksimal 768px (smartphone) */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
