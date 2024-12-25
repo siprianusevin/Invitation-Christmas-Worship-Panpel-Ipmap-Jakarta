@@ -52,14 +52,60 @@ body {
   animation: fadeUp 2s ease-out;
 }
 
-
 .saya {
-  color: #87ceeb;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: #4b79a1;
+  text-decoration: solid;
+  text-decoration: underline, yellow;
   text-align: center;
-  text-decoration: underline;
+  color: #87CEEB;
 }
 
+/* Styling umum untuk semua header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.firman {
+  text-align: center;
+  background: linear-gradient(90deg, #8b0000, #ff4500);
+  /* Gradasi merah ke oranye */
+  color: white;
+  /* Warna teks putih */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* Sudut membulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* Efek bayangan */
+  font-family: 'Georgia', serif;
+  /* Font klasik untuk kesan religius */
+  text-transform: uppercase;
+  /* Mengubah teks menjadi huruf besar */
+  letter-spacing: 2px;
+  /* Spasi antar huruf */
+  animation: fadeIn 2s ease-in;
+  /* Efek animasi masuk */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Masuk dari atas */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* Posisi akhir */
+  }
+}
 
 .subtitle {
   position: absolute;
@@ -107,6 +153,9 @@ body {
   transform: translateY(-10px);
   color: #ffcd02;
 }
+
+
+/* Akiran Css untuk HomePage 1 Pohon Natal */
 
 /* Akhir CSS untuk HomePage 1 Pohon Natal */
 .home-section {
@@ -677,15 +726,6 @@ body {
 }
 
 /* acara H1 Awalan Coutdown*/
-/* Container Utama */
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  color: gold;
-}
-
 /* CSS untuk Countdown Container */
 .countdown-container {
   display: grid;
@@ -821,24 +861,52 @@ audio {
   text-decoration: underline;
 }
 
-/* Protokol Section */
-#protokol {
-  background-color: #fff;
-  padding: 40px;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 1000px;
+h2.protokol-header {
+  font-size: 2.5rem;
+  /* Ukuran font lebih besar untuk tampilan yang lebih menonjol */
+  font-weight: 700;
+  /* Menambah ketebalan teks */
+  color: #4CAF50;
+  /* Warna hijau yang cerah */
+  text-transform: uppercase;
+  /* Semua huruf menjadi kapital */
+  letter-spacing: 2px;
+  /* Menambah jarak antar huruf untuk tampilan yang lebih rapi */
+  margin-bottom: 20px;
+  /* Jarak bawah yang lebih kecil */
   text-align: center;
+  /* Pusatkan teks */
+  padding: 10px 20px;
+  /* Ruang dalam di sekitar teks */
+  border-radius: 8px;
+  /* Sudut membulat */
+  background-color: #e8f5e9;
+  /* Latar belakang hijau muda untuk kontras */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Efek bayangan halus untuk dimensi */
+  transition: all 0.3s ease-in-out;
+  /* Transisi halus pada perubahan gaya */
 }
 
-/* Header Styling */
-.protokol-header {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4CAF50;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+.protokol-header:hover {
+  background-color: #81C784;
+  /* Mengubah warna latar belakang saat hover */
+  color: white;
+  /* Mengubah warna teks menjadi putih saat hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  /* Membesar bayangan saat hover */
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+  .protokol-header {
+    font-size: 1.8rem;
+    /* Ukuran font lebih kecil di layar kecil */
+    margin-bottom: 15px;
+    /* Menyesuaikan margin */
+    padding: 10px;
+    /* Mengurangi padding */
+  }
 }
 
 /* Grid Layout */
@@ -853,7 +921,7 @@ audio {
 /* Grid Item Styling */
 .protokol-item {
   background-color: #f9f9f9;
-  border: 2px solid #4CAF50;
+  border: 2px solid #9C1523;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -870,7 +938,8 @@ audio {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgba(76, 175, 80, 0.2);
+  background: rgba(156, 21, 35, 0.5);
+  /* Menggunakan warna #9C1523 dengan alpha 0.2 */
   transition: left 0.3s ease-in-out;
 }
 

@@ -9,24 +9,42 @@ body {
     min-height: 100vh;
 }
 
-/* Styling umum untuk header */
-header {
-    display: flex;
+/* Gaya untuk elemen kiri dalam header */
+.header-left,
+.header-right {
+    flex: 1;
     text-align: center;
-    font-size: 1.5em;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-weight: bold;
-    text-shadow: #4b79a1;
-    text-decoration: solid;
-    text-decoration: underline, yellow;
+/* Gaya untuk elemen tengah dalam header */
+.header-center {
+    flex: 2;
     text-align: center;
-    color: #87CEEB;
+}
+
+/* Gaya untuk logo gambar */
+.logo-container img {
+    width: 100px;
+    /* Ukuran gambar logo */
+    height: auto;
+    border-radius: 50%;
+    /* Membuat logo berbentuk lingkaran */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Gaya untuk teks judul */
+.header-center {
+    font-size: 1.5rem;
+    color: #333;
+    /* Warna teks */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    /* Membuat teks huruf besar */
+    letter-spacing: 1px;
+    /* Memberikan jarak antar huruf */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling untuk logo di bagian kiri */
